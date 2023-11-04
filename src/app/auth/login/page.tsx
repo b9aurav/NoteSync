@@ -10,7 +10,7 @@ export default function Login() {
   return (
     <main className="flex min-h-screen flex-col items-center p-24 justify-center">
       <div className="border border-gray-700 p-3 bg-gray-200 rounded-t-2xl">
-        <Label className="text-xl font-bold underline flex font-mono">
+        <Label className="text-xl font-bold underline flex font-mono justify-center items-center">
           <FaPenNib /> <span className="ml-2">NoteSync</span>
         </Label>
       </div>

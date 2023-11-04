@@ -4,9 +4,7 @@ import { FaPenNib } from "react-icons/fa";
 import {
   Avatar,
   Button,
-  DarkThemeToggle,
   FileInput,
-  Flowbite,
   Label,
   Spinner,
   TextInput,
@@ -33,7 +31,7 @@ export default function Register() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center">
       <div className="border border-gray-700 p-3 bg-gray-200 rounded-t-2xl">
-        <Label className="text-xl font-bold underline flex font-mono">
+        <Label className="text-xl font-bold underline flex font-mono justify-center items-center">
           <FaPenNib /> <span className="ml-2">NoteSync</span>
         </Label>
       </div>
