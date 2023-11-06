@@ -29,11 +29,11 @@ function Sidebar() {
 
   return (
     <>
-      <Button onClick={() => setIsOpen(!isOpen)} className="lg:hidden border-0 rounded-none w-full" color="dark">
+      <Button onClick={() => setIsOpen(!isOpen)} className="lg:hidden border-0 rounded-none w-screen" color="dark">
         {isOpen ? <AiOutlineClose/>:<AiOutlineMenu />}
       </Button>
       {isOpen && (
-        <Sider className="h-screen relative border-r-8 border-b-8 border-t-8 rounded-r-2xl w-[18rem]">
+        <Sider className="h-screen fixed border-gray-300 border-r-2  w-[18rem] lg:static">
           <div className="flex items-center justify-center bg-gray-400 rounded-md">
             <Label className="text-xl font-bold underline flex font-mono my-4 text-[white] justify-center items-center">
               <FaPenNib /> <span className="ml-2">NoteSync</span>
@@ -44,7 +44,6 @@ function Sidebar() {
               <Sider.ItemGroup>
                 <Dropdown
                   label=""
-                  className="w-full"
                   dismissOnClick={false}
                   renderTrigger={() => (
                     <Sider.Item>
@@ -55,7 +54,7 @@ function Sidebar() {
                     </Sider.Item>
                   )}
                 >
-                  <Dropdown.Header className="flex items-center flex-col">
+                  <Dropdown.Header className="flex items-center flex-col ">
                     <Avatar size="md" rounded></Avatar>
                     <span className="block text-sm mt-2">Full Name</span>
                   </Dropdown.Header>
